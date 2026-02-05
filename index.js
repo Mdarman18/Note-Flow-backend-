@@ -35,6 +35,6 @@ app.use("/api/user", route);
 // ===------Note detalis route ======------
 app.use("/api/note", noteRoute);
 
-// app.listen(port, () => {
-//   console.log(`http://localhost:${port}`);
-// });
+app.listen(port, () => {
+  console.log(`http://localhost:${port}`);
+});
