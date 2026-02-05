@@ -20,10 +20,11 @@ app.use(
   cors({
     origin: [
       "https://note-flow-frontend-rose.vercel.app",
+      "https://note-flow-frontend-git-main-md-armans-projects-b37fe898.vercel.app",
       "http://localhost:5173",
     ],
     credentials: true,
-  }),
+  })
 );
 // ====---Main Routes -----==========
 app.get("/", (req, res) => {
