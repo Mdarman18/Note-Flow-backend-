@@ -5,14 +5,14 @@ dotenv.config();
 const port = process.env.PORT || 4000;
 
 // ==-------Db connections ==--------
-import { dbConnection } from "./connections/connection.js";
-import { route } from "./route/UserRoute.js";
+import { dbConnection } from "./src/connections/connection.js";
+import { route } from "./src/route/UserRoute.js";
 dbConnection();
 
 // ===---Middlewares ==------------
 import cookieParser from "cookie-parser";
 import cors from "cors";
-import { noteRoute } from "./route/note_route.js";
+import { noteRoute } from "./src/route/note_route.js";
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
