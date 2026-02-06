@@ -83,8 +83,8 @@ export const HandleLogin = async (req, res) => {
     //     ==----Set In Cookies =====---------
     res.cookie("authtoken", token, {
       httpOnly: true,
-      secure: false,
-      sameSite: "lax",
+      secure: true,
+      sameSite: "none",
       maxAge: 60 * 60 * 1000,
     });
 
